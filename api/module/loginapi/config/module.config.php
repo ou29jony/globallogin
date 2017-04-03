@@ -363,4 +363,40 @@ return [
             ],
         ],
     ],
+    'zf-mvc-auth' => [
+        'authorization' => [
+            'loginapi\\V1\\Rest\\Users\\Controller' => [
+                'collection' => [
+                    'GET' => true,
+                    'POST' => false,
+                    'PUT' => false,
+                    'PATCH' => false,
+                    'DELETE' => false,
+                ],
+                'entity' => [
+                    'GET' => true,
+                    'POST' => false,
+                    'PUT' => false,
+                    'PATCH' => false,
+                    'DELETE' => true,
+                ],
+            ],
+            'loginapi\\V1\\Rest\\UserRight\\Controller' => [
+                'collection' => [
+                    'GET' => true,
+                    'POST' => true,
+                    'PUT' => false,
+                    'PATCH' => false,
+                    'DELETE' => false,
+                ],
+                'entity' => [
+                    'GET' => true,
+                    'POST' => false,
+                    'PUT' => true,
+                    'PATCH' => true,
+                    'DELETE' => true,
+                ],
+            ],
+        ],
+    ],
 ];
